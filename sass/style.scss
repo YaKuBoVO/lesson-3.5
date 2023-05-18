@@ -1,0 +1,31 @@
+$primary-bg-color: #fff;
+$primary-text-color: #fff;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  background-color: $primary-bg-color;
+}
+
+#header {
+  ul {
+   list-style: none;
+   }
+   li {
+   
+   }
+   a {
+    color: #83888f;
+   }
+}

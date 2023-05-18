@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  background-color: #fff;
+}
+
+#header ul {
+  list-style: none;
+}
+#header a {
+  color: #83888f;
+}/*# sourceMappingURL=style.css.map */
