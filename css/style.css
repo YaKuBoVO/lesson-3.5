@@ -11,13 +11,116 @@ p {
 }
 
 body {
+  perspective: 1000px;
   font-family: "Fraunces", serif;
   background-color: #fff;
 }
 
+/*! Header */
 #header ul {
-  list-style: none;
+  display: flex;
 }
-#header a {
+#header ul li a {
+  margin-left: 25px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
   color: #83888f;
+}
+
+#header i.bx {
+  display: none;
+}
+
+#header {
+  padding: 8px 25px;
+}
+#header ul li a.active {
+  color: tomato;
+  border-bottom: 1.5px solid tomato;
+}
+
+/*! SITE-HERO */
+#site-hero {
+  height: 605px;
+}
+
+#site-hero {
+  background-image: url("../imgs/homecofe.png");
+  background-repeat: no-repeat;
+  background-size: 1160px 600px;
+  background-position: center center;
+}
+
+#site-hero .site-hero__content {
+  padding: 120px 0 0 40px;
+}
+#site-hero .site-hero__content button.button-btn {
+  padding: 15px 30px;
+  background: #0E8784;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+}
+#site-hero .site-hero__content h1 {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fefcf7;
+  margin-bottom: 32px;
+}
+#site-hero .site-hero__content p {
+  width: 400px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 56px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 98%;
+  }
+  #header ul.navbar-list.active {
+    width: 30%;
+    height: 38vh;
+    right: 0;
+    top: 40px;
+    opacity: 1;
+    padding: 50px 0;
+    background-color: #2c343e;
+  }
+  #header ul.navbar-list {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    text-align: center;
+    display: block;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  #header ul.navbar-list li {
+    margin-bottom: 15px;
+  }
+  #header ul.navbar-list li a {
+    transition: 0.4s;
+  }
+  #header ul.navbar-list li a:hover {
+    color: tomato;
+  }
+}
+#header i {
+  font-size: 28px;
+}
+#header i.bx {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
