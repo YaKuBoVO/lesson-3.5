@@ -15,9 +15,10 @@ p {
 }
 
 body {
-   perspective: 1000px;
+  perspective: 1000px;
   font-family: "Fraunces", serif;
   background-color: $bg-color;
+  overflow-x: hidden;
 }
 
 /*! Header */
@@ -40,15 +41,7 @@ body {
   }
 }
 #header {
-  i {
-    &.bx {
-      display: none;
-    }
-  }
-}
-
-#header {
-  padding: 8px 25px;
+  padding: 20px 1px;
   ul {
     li {
       a {
@@ -63,27 +56,24 @@ body {
 
 /*! SITE-HERO */
 #site-hero {
-  //width: 100%;
-  height: 605px;
+  margin-bottom: 200px;
 }
-#site-hero {
-  background-image: url("../imgs/homecofe.png");
-  background-repeat: no-repeat;
-  background-size: 1160px 600px;
-  background-position: center center;
-}
-
 #site-hero {
   .site-hero__content {
-    padding: 120px 0 0 40px;
+    height: 605px;
+    background-image: url("../imgs/homecofe.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 110px 0 0 50px;
 
     button {
       &.button-btn {
-         padding: 15px 30px;
-         background: #0E8784;
-         border-radius: 6px;
-         border: none;
-         color: #fff;
+        padding: 15px 30px;
+        background: #0e8784;
+        border-radius: 6px;
+        border: none;
+        color: #fff;
       }
     }
     h1 {
@@ -106,6 +96,252 @@ body {
   }
 }
 
+/*! COFE-COLLECTION */
+#collection {
+  background-image: url("../imgs/collection.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  .collection-content {
+    img {
+      margin: 140px 0 60px 0;
+    }
+    h3 {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #333d4b;
+      margin-bottom: 25px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #333d4b;
+    }
+  }
+}
+
+/*!  CHOOSE */
+#choose {
+  margin: 0 auto;
+  margin-top: 170px;
+  .choose-content {
+    width: 100%;
+    height: 580px;
+    padding-top: 100px;
+    background: $primary-bg-color;
+    border-radius: 10px;
+    h2 {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      color: #fefcf7;
+      margin-bottom: 32px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #fefcf7;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+    }
+  }
+}
+
+#choose {
+  .row {
+    .choose-img {
+      img {
+        margin-top: 80px;
+      }
+    }
+  }
+}
+/*! / CHOOSE  */
+
+/*! HOW-WORK */
+#how-work {
+  margin-top: 180px;
+  padding: 150px 0 50px 0;
+  .work-line {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    .squre-line {
+      width: 30px;
+      height: 30px;
+      background: #fff;
+      border: 1px solid #0e8784;
+      border-radius: 50%;
+      z-index: 15;
+    }
+    .squre-line-x {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: #fdd6ba;
+      top: 15px;
+      z-index: -1;
+    }
+  }
+  h4 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888f;
+  }
+}
+
+/*! HOW-WORK */
+#how-work {
+  margin-bottom: 200px;
+  .container {
+    button {
+      padding: 10px 30px;
+      background: #0e8784;
+      border-radius: 6px;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      border: none;
+      color: #fefcf7;
+    }
+  }
+  .row {
+    .how-work-content {
+      h1 {
+        font-size: 72px;
+        line-height: 72px;
+        color: #fdd6ba;
+        margin-bottom: 35px;
+      }
+      h3 {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333d4b;
+        margin-bottom: 42px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333d4b;
+        margin-bottom: 65px;
+      }
+    }
+  }
+}
+
+/*! FOOTER */
+#footer {
+  width: auto;
+  height: 120px;
+  background: $primary-bg-color;
+  padding: 50px 0 0 0px;
+  .footer-content {
+    .footer-list {
+      .footer-item {
+        a {
+          margin-right: 33px;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 15px;
+          letter-spacing: 0.923077px;
+          text-transform: uppercase;
+          color: #83888f;
+        }
+      }
+    }
+    .partner-logo {
+      i {
+        font-size: 25px;
+        margin-right: 20px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 98%;
+  }
+  /*! header */
+  #header {
+    padding: 20px 10px;
+  }
+  /*! Site-hero */
+  #site-hero {
+    .site-hero__content {
+      height: 580px;
+      background-image: url("../imgs/homecofe.png");
+      background-repeat: no-repeat;
+      background-size: 100% 90%;
+      background-position: center center;
+      padding: 110px 0 0 20px;
+    }
+  }
+
+  /*! COFE-COLLECTION */
+  #collection .collection-content {
+    img {
+      margin: 110px 0 30px 0;
+    }
+  }
+
+  /*! CHOOSE */
+  #choose {
+    .row {
+      .choose-img {
+        img {
+          margin-top: 70px;
+        }
+      }
+    }
+  }
+
+  /*! FOOTER */
+  #footer {
+    width: auto;
+    height: 120px;
+    background: $primary-bg-color;
+    padding: 50px 0 0 0px;
+    .footer-content {
+      .footer-list {
+        .footer-item {
+          a {
+            margin-right: 20px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.923077px;
+            text-transform: uppercase;
+            color: #83888f;
+          }
+        }
+      }
+      .partner-logo {
+        i {
+          font-size: 25px;
+          margin-right: 5px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     width: 98%;
@@ -115,25 +351,27 @@ body {
     ul {
       &.navbar-list {
         &.active {
-          width: 30%;
-          height: 38vh;
+          width: 28%;
+          height: 20vh;
           right: 0;
-          top: 40px;
+          top: 45px;
           opacity: 1;
           padding: 50px 0;
           background-color: $primary-bg-color;
+          color: #fff;
         }
       }
     }
   }
 
   #header {
+    padding: 20px 25px 0 10px;
     ul {
       &.navbar-list {
         width: 0;
         height: 0;
         position: absolute;
-        right: 0;
+        right: 50px;
         top: 40px;
         text-align: center;
         display: block;
@@ -151,13 +389,535 @@ body {
       }
     }
   }
+
+  #header {
+    i {
+      font-size: 35px;
+      &.bx {
+        display: block;
+      }
+    }
+  }
+
+  /*! Site-hero */
+  #site-hero {
+    .site-hero__content {
+      height: 550px;
+      background-image: url("../imgs/homecofe.png");
+      background-repeat: no-repeat;
+      background-size: 100% 85%;
+      background-position: center center;
+      padding: 120px 0 0 20px;
+    }
+  }
+  #site-hero {
+    .site-hero__content {
+      h1 {
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 15px;
+      }
+      p {
+        width: 300px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  /*! COFE-COLLECTION */
+  #collection .collection-content {
+    img {
+      margin: 90px 0 0px 0;
+    }
+  }
+
+  /*! CHOOSE */
+  #choose {
+    .row {
+      .choose-img {
+        img {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  #choose {
+    .choose-content {
+      p {
+        .display-md-none {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /*! FOOTER */
+  #footer {
+    width: 100%;
+    height: 290px;
+    background: $primary-bg-color;
+    padding: 50px 0px;
+    .footer-content {
+      .site-logo {
+         margin-bottom: 30px;
+      }
+      .footer-list {
+         margin-bottom: 30px;
+         .footer-item {
+         margin-bottom: 10px;
+         }
+      }
+      .partner-logo {
+         i {
+            margin-right: 30px;
+            font-size: 35px;
+         }
+      }
+    }
+  }
 }
 
-#header {
-  i {
-    font-size: 28px;
-    &.bx {
-      display: block;
+
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 98%;
+  }
+
+  #header {
+    ul {
+      &.navbar-list {
+        &.active {
+          width: 28%;
+          height: 20vh;
+          right: 0;
+          top: 45px;
+          opacity: 1;
+          padding: 50px 0;
+          background-color: $primary-bg-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  #header {
+    padding: 20px 25px 20px 10px;
+    ul {
+      &.navbar-list {
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 50px;
+        top: 40px;
+        text-align: center;
+        display: block;
+        opacity: 0;
+        transition: 0.5s;
+        li {
+          margin-bottom: 15px;
+          a {
+            transition: 0.4s;
+            &:hover {
+              color: tomato;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #header {
+    i {
+      font-size: 35px;
+      &.bx {
+        display: block;
+      }
+    }
+  }
+
+  /*! Site-hero */
+  #site-hero {
+    .site-hero__content {
+      height: 450px;
+      background-image: url("../imgs/homecofe.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      padding: 65px 0 0 20px;
+      border-radius: 10px;
+    }
+  }
+  #site-hero {
+    .site-hero__content {
+      h1 {
+        font-size: 30px;
+        line-height: 55px;
+        margin-bottom: 15px;
+      }
+      p {
+        width: 280px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  /*! COFE-COLLECTION */
+  #collection .collection-content {
+    img {
+      margin: 70px 0 0px 0;
+    }
+  }
+
+  /*! CHOOSE */
+  #choose {
+    .row {
+      .choose-img {
+        img {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  #choose {
+    .choose-content {
+      p {
+        .display-md-none {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /*! FOOTER */
+  #footer {
+    width: 100%;
+    height: 290px;
+    background: $primary-bg-color;
+    padding: 50px 0px;
+    .footer-content {
+      .site-logo {
+         margin-bottom: 30px;
+      }
+      .footer-list {
+         margin-bottom: 30px;
+         .footer-item {
+         margin-bottom: 10px;
+         }
+      }
+      .partner-logo {
+         i {
+            margin-right: 30px;
+            font-size: 35px;
+         }
+      }
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 98%;
+  }
+
+  #header {
+    ul {
+      &.navbar-list {
+        &.active {
+          width: 32%;
+          height: 20vh;
+          right: 0;
+          top: 50px;
+          opacity: 1;
+          padding: 50px 0;
+          background-color: $primary-bg-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  #header {
+    padding: 20px 25px 20px 10px;
+    ul {
+      &.navbar-list {
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        display: block;
+        opacity: 0;
+        transition: 0.5s;
+        li {
+          margin-bottom: 15px;
+          a {
+            transition: 0.4s;
+            &:hover {
+              color: tomato;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #header {
+    i {
+      font-size: 35px;
+      &.bx {
+        display: block;
+      }
+    }
+  }
+
+  /*! Site-hero */
+  #site-hero {
+    .site-hero__content {
+      height: 450px;
+      background-image: url("../imgs/homecofe.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      padding: 65px 0 0 20px;
+      border-radius: 10px;
+    }
+  }
+  #site-hero {
+    .site-hero__content {
+      h1 {
+        font-size: 30px;
+        line-height: 55px;
+        margin-bottom: 15px;
+      }
+      p {
+        width: 280px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  /*! COFE-COLLECTION */
+  #collection .collection-content {
+    img {
+      margin: 70px 0 0px 0;
+    }
+  }
+
+  /*! CHOOSE */
+  #choose {
+    .row {
+      .choose-img {
+        img {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  #choose {
+    .choose-content {
+      width: 100%;
+      height: 450px;
+      p {
+        .display-md-none {
+          display: none;
+        }
+      }
+    }
+  }
+  #how-work {
+   margin-bottom: 50px;
+      text-align: center;
+      h4 {
+         margin-bottom: 25px;
+      }
+   .work-line {
+      margin: 0 auto;
+      margin-bottom: 40px;
+   }
+  }
+  /*! FOOTER */
+  #footer {
+    width: 100%;
+    height: 290px;
+    background: $primary-bg-color;
+    padding: 50px 0px;
+    .footer-content {
+      .site-logo {
+         margin-bottom: 30px;
+      }
+      .footer-list {
+         display: block;
+         margin-bottom: 30px;
+         .footer-item {
+         margin-bottom: 10px;
+         }
+      }
+      .partner-logo {
+         i {
+            margin-right: 30px;
+            font-size: 35px;
+         }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 98%;
+  }
+
+  #header {
+    ul {
+      &.navbar-list {
+        &.active {
+          width: 45%;
+          height: 20vh;
+          right: 0;
+          top: 50px;
+          opacity: 1;
+          padding: 50px 0;
+          background-color: $primary-bg-color;
+        }
+      }
+    }
+  }
+
+  #header {
+    padding: 20px 25px 20px 10px;
+    ul {
+      &.navbar-list {
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        display: block;
+        opacity: 0;
+        transition: 0.5s;
+        li {
+          margin-bottom: 15px;
+          a {
+             color: #fff;
+            transition: 0.4s;
+            &:hover {
+              color: tomato;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #header {
+    i {
+      font-size: 35px;
+      &.bx {
+        display: block;
+      }
+    }
+  }
+
+  /*! Site-hero */
+  #site-hero {
+    .site-hero__content {
+      height: 450px;
+      background-image: url("../imgs/homecofe.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      padding: 65px 0 0 20px;
+      border-radius: 10px;
+    }
+  }
+  #site-hero {
+    .site-hero__content {
+      h1 {
+        font-size: 30px;
+        line-height: 55px;
+        margin-bottom: 15px;
+      }
+      p {
+        width: 280px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 28px;
+      }
+    }
+  }
+
+  /*! COFE-COLLECTION */
+  #collection .collection-content {
+    img {
+      margin: 70px 0 0px 0;
+    }
+  }
+
+  /*! CHOOSE */
+  #choose {
+    .row {
+      .choose-img {
+        img {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  #choose {
+    .choose-content {
+      width: 100%;
+      height: 450px;
+      p {
+        .display-md-none {
+          display: none;
+        }
+      }
+    }
+  }
+  #how-work {
+      text-align: center;
+      h4 {
+         margin-bottom: 25px;
+      }
+   .work-line {
+      margin: 0 auto;
+      margin-bottom: 40px;
+   }
+  }
+  /*! FOOTER */
+  #footer {
+    width: 100%;
+    height: 290px;
+    background: $primary-bg-color;
+    padding: 50px 0px;
+    .footer-content {
+      .site-logo {
+         margin-bottom: 30px;
+      }
+      .footer-list {
+         display: block;
+         margin-bottom: 30px;
+         .footer-item {
+         margin-bottom: 10px;
+         }
+      }
+      .partner-logo {
+         i {
+            margin-right: 30px;
+            font-size: 35px;
+         }
+      }
     }
   }
 }
