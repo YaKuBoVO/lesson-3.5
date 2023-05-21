@@ -34,11 +34,136 @@ body {
 }
 
 #header {
-  padding: 20px 1px;
+  padding: 20px 10px;
 }
 #header ul li a.active {
   color: tomato;
   border-bottom: 1.5px solid tomato;
+}
+
+/*! SITE-HERO ABOUT */
+#site-about__hero {
+  margin-bottom: 170px;
+}
+#site-about__hero .site-about__content {
+  width: 100%;
+  height: 450px;
+  background-image: url("../imgs/about-img/aboutimg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  padding: 130px 40px;
+}
+#site-about__hero .site-about__content h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fefcf7;
+  margin-bottom: 24px;
+}
+#site-about__hero .site-about__content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+}
+
+/*! OUR-COMMIt */
+#our-commit {
+  margin-bottom: 200px;
+  padding: 0 60px;
+}
+#our-commit .our-commit__content h3 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333d4b;
+  margin-bottom: 32px;
+}
+#our-commit .our-commit__content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/*! Uncom-about */
+#uncom-about {
+  margin-bottom: 160px;
+  height: 474px;
+  background: #2c343e;
+  border-radius: 10px;
+}
+#uncom-about .uncom-about__content {
+  padding: 80px 0 0 30px;
+}
+#uncom-about .uncom-about__content h2 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fefcf7;
+  margin-bottom: 30px;
+}
+#uncom-about .uncom-about__content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+#uncom-about .uncom-about__img {
+  position: relative;
+}
+#uncom-about .uncom-about__img img {
+  position: absolute;
+  top: -100px;
+}
+
+/*! countries */
+#countries {
+  margin-bottom: 160px;
+}
+#countries h2 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+  margin-bottom: 72px;
+}
+#countries .countries-list .countries-item img {
+  margin-bottom: 45px;
+}
+#countries .countries-list .countries-item h3 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+  margin-bottom: 24px;
+}
+
+/*! FOOTER */
+#footer {
+  width: auto;
+  height: 120px;
+  background: #2c343e;
+  padding: 50px 0 0 0px;
+}
+#footer .footer-content .footer-list .footer-item a {
+  margin-right: 33px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+#footer .footer-content .partner-logo i {
+  font-size: 25px;
+  margin-right: 20px;
+  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
