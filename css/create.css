@@ -41,6 +41,329 @@ body {
   border-bottom: 1.5px solid tomato;
 }
 
+/*! SITE-HERO CREATE */
+#site-hero__create {
+  margin-bottom: 155px;
+}
+#site-hero__create .site-create__content {
+  width: 100%;
+  height: 450px;
+  background-image: url("../imgs/create-img/createimg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  padding: 120px 60px;
+}
+#site-hero__create h1 {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fefcf7;
+  margin-bottom: 32px;
+}
+#site-hero__create p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/*! COFFE-ANALIZ */
+#coffe-analiz {
+  width: 100%;
+  height: 655px;
+  background: #2c343e;
+  padding: 110px 0;
+  margin-bottom: 170px;
+}
+#coffe-analiz .coofe-analiz__line {
+  position: relative;
+  display: flex;
+  -moz-column-gap: 327px;
+       column-gap: 327px;
+  margin-bottom: 82px;
+}
+#coffe-analiz .coofe-analiz__line .round {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0e8784;
+  border-radius: 50%;
+  z-index: 10;
+}
+#coffe-analiz .coofe-analiz__line .line {
+  width: 63%;
+  top: 14px;
+  border: 1.5px solid #fdd6ba;
+  position: absolute;
+  left: 23px;
+  z-index: 1;
+}
+
+#coffe-analiz .row .coofe-analiz__content h1 {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+  margin-bottom: 38px;
+}
+#coffe-analiz .row .coofe-analiz__content h3 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #fefcf7;
+  margin-bottom: 42px;
+}
+#coffe-analiz .row .coofe-analiz__content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+}
+
+/*! DROPDOWN */
+#dropdown {
+  margin-bottom: 85px;
+}
+#dropdown .dropdown-menu__content {
+  margin-bottom: 40px;
+}
+#dropdown .dropdown-menu__content h2 a {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #83888f;
+}
+#dropdown .dropdown-menu__content h2 span {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0e8784;
+  margin-right: 23px;
+}
+
+#dropdown .dropdown {
+  margin-bottom: 90px;
+}
+#dropdown .dropdown.active .option {
+  display: block;
+  transition: 0.8s;
+}
+
+::-moz-placeholder {
+  font-weight: 900;
+  font-size: 40px;
+  color: #83888f;
+}
+
+::placeholder {
+  font-weight: 900;
+  font-size: 40px;
+  color: #83888f;
+}
+
+#dropdown .dropdown.active::before {
+  top: 18px;
+  transform: rotate(-225deg);
+  transition: all 0.5s ease;
+}
+
+#dropdown .dropdown {
+  position: relative;
+  transition: all 0.8s ease;
+}
+#dropdown .dropdown::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  z-index: 1000;
+  width: 12px;
+  height: 12px;
+  border: 2.5px solid #0e8784;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+#dropdown .dropdown input {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.8s ease;
+}
+#dropdown .dropdown .option {
+  width: 200px;
+  height: 250px;
+  margin-top: 40px;
+  padding: 32px 17px;
+  background: #f4f1eb;
+  border-radius: 8px;
+  overflow: hidden;
+  display: none;
+  transition: all 0.5s ease;
+}
+#dropdown .dropdown .option:hover {
+  background: #0e8784;
+}
+#dropdown .dropdown .option h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333d4b;
+  margin-bottom: 24px;
+}
+#dropdown .dropdown .option p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+
+#dropdown .drink-coofe {
+  width: 690px;
+  height: 208px;
+  background: #2c343e;
+  border-radius: 10px;
+  padding: 40px 80px;
+  margin-bottom: 40px;
+}
+#dropdown .drink-coofe h3 {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #ffffff;
+}
+#dropdown .drink-coofe h3 span {
+  color: #0e8784;
+}
+#dropdown .drink-coofe h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+#dropdown .dropdown-and__modal .modal-button button.modal-btn {
+  padding: 12px 60px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: #0e8784;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+}
+
+#dropdown .dropdown-and__modal .modal-button.active ~ .modall {
+  position: relative;
+  top: 20px;
+  width: 500px;
+  height: 540px;
+  opacity: 1;
+}
+
+#dropdown .modall {
+  opacity: 0;
+  width: 500px;
+  height: 540px;
+  background: #fefcf7;
+  border-radius: 8px;
+}
+#dropdown .modall .head {
+  height: 100px;
+  padding: 25px 56px;
+  background: #2f3844;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 40px;
+}
+#dropdown .modall h2 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+}
+#dropdown .body {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+#dropdown .body h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #83888f;
+  margin-bottom: 10px;
+}
+#dropdown .body h3 span {
+  color: #0e8784;
+}
+#dropdown .body p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+#dropdown .footer {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+#dropdown .footer h4 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+}
+#dropdown .footer button {
+  padding: 12px 60px;
+  border: none;
+  border-radius: 8px;
+  background: #0e8784;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #fefcf7;
+}
+
+/*! FOOTER */
+#footer {
+  width: auto;
+  height: 120px;
+  background: #2c343e;
+  padding: 50px 0 0 0px;
+}
+#footer .footer-content .footer-list .footer-item a {
+  margin-right: 33px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888f;
+}
+#footer .footer-content .partner-logo i {
+  font-size: 25px;
+  margin-right: 20px;
+  color: #fff;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     width: 98%;
@@ -74,10 +397,10 @@ body {
   #header ul.navbar-list li a:hover {
     color: tomato;
   }
-}
-#header i {
-  font-size: 28px;
-}
-#header i.bx {
-  display: block;
+  #header i {
+    font-size: 28px;
+  }
+  #header i.bx {
+    display: block;
+  }
 }/*# sourceMappingURL=create.css.map */
